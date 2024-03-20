@@ -4,7 +4,7 @@ import "./featurejob.scss";
 import { ReactComponent as Arrow } from "../../assets/icons/right-arrow.svg";
 import { ReactComponent as Location } from "../../assets/icons/location.svg";
 import { ReactComponent as Label } from "../../assets/icons/label.svg";
-import { ReactComponent as Building } from "../../assets/icons/building-svgrepo-com.svg";
+
 import { Companies, FeatureJob } from "../../data";
 
 const FeaturedJob: React.FC = () => {

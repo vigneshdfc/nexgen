@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactComponent as User } from "../../assets/icons/user.svg";
 import "./portal.scss";
 import { JobPortal } from "../../data";
 

@@ -9,7 +9,6 @@ import { ReactComponent as HeroImg } from "../../assets/icons/hero.svg";
 import { ReactComponent as Bag } from "../../assets/icons/work-bag-svgrepo-com (1).svg";
 import { ReactComponent as Build } from "../../assets/icons/building-svgrepo-com.svg";
 import { ReactComponent as Profile } from "../../assets/icons/profile.svg";
-import Header from "../Header";
 
 const Hero: React.FC = () => {
   return (
