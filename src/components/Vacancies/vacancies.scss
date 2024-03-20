@@ -1,0 +1,41 @@
+.vacancies {
+  background-color: #fff;
+  padding: 40px 24px;
+  width: 100%;
+  @media (max-width: 780px) {
+    padding: 24px;
+    h3 {
+      font-size: 24px;
+    }
+  }
+
+  .main-content-wrapp {
+    display: grid;
+    // justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 42px 0;
+    text-align: left;
+    @media (max-width: 780px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding: 24px 0;
+    }
+    .vac-contents {
+      cursor: pointer;
+      p {
+        font-weight: 600;
+        @media (max-width: 780px) {
+          font-size: 14px;
+        }
+      }
+      span {
+        font-size: 12px;
+        font-weight: 400;
+        @media (max-width: 780px) {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
