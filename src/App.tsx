@@ -1,6 +1,7 @@
-import React from "react";
-
+import React, { useEffect } from "react";
 import "./App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Header from "./components/Header";
 import Hero from "./components/Home";
 import Vacancies from "./components/Vacancies";
@@ -13,6 +14,15 @@ import Register from "./components/Register";
 import Footer from "./components/Footer";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      duration: 1200,
+    });
+    AOS.refresh();
+  }, []);
   return (
     <div className="App">
       <div className="header-wrapp">

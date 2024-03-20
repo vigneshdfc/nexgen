@@ -33,6 +33,7 @@
     align-items: center;
 
     @media (max-width: 780px) {
+      display: grid;
       grid-template-columns: 1fr;
       margin-top: 80px;
 
@@ -108,9 +109,9 @@
       }
     }
     .hero-img {
-      //   padding: 24px;
+      padding-left: 24px;
       svg {
-        width: 550px;
+        width: 450px;
         height: 400px;
       }
     }

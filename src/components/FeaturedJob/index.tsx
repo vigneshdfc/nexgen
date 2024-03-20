@@ -20,7 +20,7 @@ const FeaturedJob: React.FC = () => {
 
         <div className="feature-job">
           {FeatureJob.map((f, i) => (
-            <div className="border-wrapp" key={i}>
+            <div className="border-wrapp" key={i} data-aos="flip-down">
               <p>{f.title}</p>
               <div className="req">
                 <button>{f.time}</button>

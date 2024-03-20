@@ -5,7 +5,7 @@ import { ReactComponent as Call } from "../../assets/icons/call.svg";
 import { ReactComponent as Mail } from "../../assets/icons/mail .svg";
 import { ReactComponent as Search } from "../../assets/icons/search.svg";
 import { ReactComponent as Location } from "../../assets/icons/location.svg";
-import { ReactComponent as HeroImg } from "../../assets/icons/hero.svg";
+import { ReactComponent as HeroImg } from "../../assets/icons/laptop.svg";
 import { ReactComponent as Bag } from "../../assets/icons/work-bag-svgrepo-com (1).svg";
 import { ReactComponent as Build } from "../../assets/icons/building-svgrepo-com.svg";
 import { ReactComponent as Profile } from "../../assets/icons/profile.svg";
@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
 
         <div className="content">
           <div className="hero-content-wrapp">
-            <h1>
+            <h1 data-aos="fade-up" data-aos-mirror="true" data-aos-once="false">
               Let's make it
               <br /> happen together!
             </h1>
