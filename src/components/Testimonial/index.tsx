@@ -8,15 +8,49 @@ import { testimonial } from "../../data";
 import Slider from "react-slick";
 
 const Testimonial: React.FC = () => {
+  function SampleNextArrow(props: any) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          background: "#000",
+          borderRadius: "50px",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function SamplePrevArrow(props: any) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{
+          ...style,
+          display: "block",
+          background: "#000",
+          borderRadius: "50px",
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
   var settings = {
     dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: true,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    // arrows: true,
+    // autoplay: true,
+    speed: 500,
+    // autoplaySpeed: 2000,
     cssEase: "linear",
     responsive: [
       {
@@ -41,9 +75,6 @@ const Testimonial: React.FC = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          autoplay: true,
-          speed: 2000,
-          autoplaySpeed: 2000,
         },
       },
     ],
